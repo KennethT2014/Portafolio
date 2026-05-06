@@ -12,7 +12,7 @@ const Projects = () => {
                             <br />Diseño UX/UI.
                         </p>
                         <button className="text-body-responsive bg-white text-primary px-6 py-2 rounded-lg font-semibold shadow-soft hover:shadow-blue transition-all">
-                            <a href='https://www.gnomostudios.com'>visitar</a>
+                            <a href='https://gnomostudio.com/'>visitar</a>
                         </button>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ const Projects = () => {
                             <br />Tienda de productos tecnológicos.
                         </p>
                         <button className="text-body-responsive bg-white text-primary px-6 py-2 rounded-lg font-semibold shadow-soft hover:shadow-blue transition-all">
-                            <a href='https://www.tecnomediashop.es'>visitar</a>
+                            <a href='https://www.tecnomediashop.net'>visitar</a>
                         </button>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const Projects = () => {
                             <br />Inversiones Valles es una empresa dedicada a la<br />logistica y transporte de producciones agricolas.
                         </p>
                         <button className="text-body-responsive bg-white text-primary px-6 py-2 rounded-lg font-semibold shadow-soft hover:shadow-blue transition-all">
-                            <a href='https://www.inversionesvalles.com'>visitar</a>
+                            <a href='https://inversionesvalle.es/'>visitar</a>
                         </button>
                     </div>
                 </div>

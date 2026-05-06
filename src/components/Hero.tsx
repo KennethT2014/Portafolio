@@ -1,6 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import profileImage from "@/assets/profile.jpeg";
+import { preloadProjectsPage } from "../App";
+import { preloadProjects } from "../pages/Projects";
 
 const Hero = () => {
+    const navigate = useNavigate();
+
+    const handlePreload = () => {
+        preloadProjectsPage();
+        preloadProjects();
+    };
+
     return (
         <section className="bg-gradient-hero grid grid-cols-1 lg:grid-cols-4 w-full min-h-screen items-center p-8 box-border">
             <div className="col-span-3 flex flex-col justify-center">
@@ -16,13 +26,18 @@ const Hero = () => {
                 </p>
                 {/* Botones */}
                 <div className="flex gap-4 p-4">
-                    <button className="text-body-responsive bg-white text-primary px-6 py-2 rounded-lg font-semibold shadow-soft hover:shadow-blue transition-all">
-                        <a href="#projects">My Projects</a>
+                    <button 
+                        onClick={() => navigate("/projects")}
+                        onMouseEnter={handlePreload}
+                        className="text-body-responsive bg-white text-primary px-6 py-2 rounded-lg font-semibold shadow-soft hover:shadow-blue transition-all cursor-pointer"
+                    >
+                        My Projects
                     </button>
                     <button className="text-body-responsive bg-transparent border-2 border-white text-primary px-6 py-2 rounded-lg font-semibold hover:bg-white/10 transition-colors">
                         <a href="#contact">Contact me</a>
                     </button>
                 </div>
+
                 {/* Iconos */}
                 <div className="flex gap-4 p-4">
                     <a href="https://github.com/KennethT2014/KennethT2014" className="">Github</a>
